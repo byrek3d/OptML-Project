@@ -1,0 +1,140 @@
+
+##SGD STEP LR
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.SGD,
+  'scheduler': torch.optim.lr_scheduler.LambdaLR,
+  'scheduler_parameters': {'lr_lambda': lr_lambda_1}}
+
+### SGD REDUCE LR ON PLATEAU
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.SGD,
+  'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau,
+  'scheduler_parameters': {'factor': 0.3, 'mode': 'max', 'patience': 2}}
+
+### SGD COSINE ANNEALING LR
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.SGD,
+  'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR,
+  'scheduler_parameters': {'T_max': 3, 'eta_min': 0.03}}
+
+## SGD STEP LR
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.SGD,
+  'scheduler': torch.optim.lr_scheduler.StepLR,
+  'scheduler_parameters': {'gamma': 0.85, 'step_size': 4}}
+
+##ADADELTA STEP LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.Adadelta,
+  'scheduler': torch.optim.lr_scheduler.LambdaLR,
+  'scheduler_parameters': {'lr_lambda': lr_lambda_1}}
+
+### ADADELTA REDUCE LR ON PLATEAU
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.Adadelta,
+  'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau,
+  'scheduler_parameters': {'factor': 0.1, 'mode': 'max', 'patience': 4}}
+
+### ADADELTA COSINE ANNEALING LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.Adadelta,
+  'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR,
+  'scheduler_parameters': {'T_max': 8, 'eta_min': 0.01}}
+
+## ADADELTA STEP LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.4,
+  'optimizer': torch.optim.Adadelta,
+  'scheduler': torch.optim.lr_scheduler.StepLR,
+  'scheduler_parameters': {'gamma': 0.95, 'step_size': 2}}
+
+
+##ADAM  STEP LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.02,
+  'optimizer': torch.optim.Adam,
+  'scheduler': torch.optim.lr_scheduler.LambdaLR,
+  'scheduler_parameters': {'lr_lambda': lr_lambda_1}}
+
+##ADAM  STEP LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.02,
+  'optimizer': torch.optim.Adam,
+  'scheduler': torch.optim.lr_scheduler.LambdaLR,
+  'scheduler_parameters': {'lr_lambda': lr_lambda_7}}
+
+### ADAM REDUCE LR ON PLATEAU
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.02,
+  'optimizer': torch.optim.Adam,
+  'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau,
+  'scheduler_parameters': {'factor': 0.5, 'mode': 'max', 'patience': 2}}
+
+### ADAM COSINE ANNEALING LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.02,
+  'optimizer': torch.optim.Adam,
+  'scheduler': torch.optim.lr_scheduler.CosineAnnealingLR,
+  'scheduler_parameters': {'T_max': 5, 'eta_min': 0.01}}
+
+## ADADELTA STEP LR
+
+parameters = {'batch_size': 90,
+  'criterion': torch.nn.modules.loss.CrossEntropyLoss,
+  'epochs': 25,
+  'folds': 5,
+  'lr': 0.02,
+  'optimizer': torch.optim.Adam,
+  'scheduler': torch.optim.lr_scheduler.StepLR,
+  'scheduler_parameters': {'gamma': 0.5, 'step_size': 2}}
