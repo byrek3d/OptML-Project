@@ -23,7 +23,7 @@
  - 'plots' directory: The several plots created in the project will be saved as .png files in this folder
  - 'data' directory: After running the run.ipynb notebook, the data needed for this project will be automatically downloaded in this folder
 -----
-**Report**: [LINK PDF]
+**Report**: [Link to the PDF](https://github.com/byrek3d/OptML-Project/blob/main/report.pdf)
 
 
  
